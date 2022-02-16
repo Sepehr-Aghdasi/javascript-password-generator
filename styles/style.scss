@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+* {
+      margin: 0;
+      padding: 0;
+      outline: none;
+      text-decoration: none;
+      list-style-type: none;
+      box-sizing: border-box;
+      font-family: "Open Sans", sans-serif;
+      // text-transform: capitalize !important;
+}
+html,
+body {
+      width: 100%;
+      height: 100%;
+      letter-spacing: 3px;
+}
+.container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #227ccb;
+}
+.row {
+      min-width: 40%;
+      min-height: 50%;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      border-radius: 7px;
+      h1 {
+            font-size: 1.2rem;
+            margin-top: 20px;
+            font-weight: 600;
+            text-align: center;
+      }
+      .output {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            input {
+                  padding: 0.5rem 4rem;
+                  text-align: center;
+                  font-size: 1rem;
+                  font-weight: 600;
+                  letter-spacing: 0px;
+                  border-radius: 4px;
+                  margin: 20px 45px;
+                  border: 2px solid #227ccb;
+            }
+      }
+      .inputs {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 20px 0px;
+            .input-option {
+                  width: 50%;
+                  margin: 20px 0px;
+                  display: flex;
+                  flex-direction: column;
+                  margin: 2rem 0;
+                  justify-content: space-evenly;
+                  align-items: center;
+                  input[type="text"] {
+                        padding: 0.1rem 0.1rem;
+                        text-align: center;
+                        font-weight: 600;
+                        font-size: 1rem;
+                        letter-spacing: 5px;
+                        border: 2px solid #227ccb;
+                        border-radius: 4px;
+                  }
+                  input[type="range"] {
+                        width: 70%;
+                        text-align: center;
+                        letter-spacing: 5px;
+                        border: 2px solid #227ccb;
+                        border-radius: 2px;
+                  }
+                  label {
+                        display: flex;
+                        font-weight: 600;
+                        align-items: flex-start;
+                  }
+            }
+            .checkbox {
+                  width: 50%;
+                  label {
+                        cursor: pointer;
+                        font-weight: 900;
+                  }
+                  input {
+                        width: 25px;
+                        height: 20px;
+                        margin: 1rem;
+                        text-align: center;
+                        font-weight: 600;
+                        letter-spacing: 5px;
+                        border: 2px solid #227ccb;
+                        border-radius: 4px;
+                        cursor: pointer;
+                  }
+            }
+      }
+      .buttons {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 15px;
+            width: 100%;
+            button {
+                  background-color: #227ccb;
+                  color: #fff;
+                  font-weight: 600;
+                  text-align: center;
+                  padding: 1rem 1.275rem;
+                  border-radius: 5px;
+                  border: none;
+                  cursor: pointer;
+                  transition: 0.5s;
+                  letter-spacing: 5px;
+                  font-size: 1.1rem;
+                  &:hover {
+                        background-color: #fff;
+                        color: #227ccb;
+                        transition: 0.5s;
+                        transform: scale(1.2);
+                  }
+            }
+      }
+}
