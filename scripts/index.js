@@ -39,7 +39,6 @@ function generatePassword() {
             // check the length input have more than 1 length
             if (lengthInput.value.length > 0) {
                   for (let i = 0; i < lengthInput.value; i++) {
-                        // lengthInput.value = rangeInput.value;
                         const randomPassword = randomPasswordGenerator(characters);
 
                         password += characters.substring(randomPassword, randomPassword + 1);
@@ -78,11 +77,6 @@ function copyPassword() {
 function focus(element, color) {
       element.style.borderColor = color;
       element.style.color = color;
-
-      // setTimeout(() => {
-      //       element.style.borderColor = "#227ccb";
-      //       element.style.color = "#227ccb";
-      // }, 2000);
 }
 
 //show the range of the range input
